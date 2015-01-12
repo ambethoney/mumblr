@@ -1,0 +1,29 @@
+<div class="index_container">
+
+  <h2>mumblr</h2>
+
+    <div class="feed">
+
+      <div class="show_mumble">
+        <% @mumbles.each do |mum| %>
+
+
+        <img class="author_thumb" src="<%=mum["author_thumbnail"] %>" width="45"/>
+
+        <span class="author_handle"><%mum["author_handle"] %></span>
+
+        <span class="date-text"><%mum["date"] %></span>
+
+        <img src="<%=mum["image"] %>" />
+
+        <p> <%=mum["text"] %> </p>
+
+        <span class="likes"> <%= mum ["likes"] %> Likes </span>
+
+        <% end %>
+
+    </div> <!-- ends show_mumble -->
+
+  </div> <!-- ends feed -->
+
+</div> <!-- ends container -->

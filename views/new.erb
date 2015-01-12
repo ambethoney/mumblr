@@ -1,0 +1,44 @@
+<div class="container">
+  <div class="box">
+
+    <h3>Create A New Mumble:</h3>
+
+    <form method ="POST" action="/mumbles">
+      <textarea name="text" cols="40" row="40" placeholder="Penny For Your Mumbles?"></textarea>
+
+      <label>
+        Image Link
+        <input type="url" name="image" size="50"/>
+      </label>
+
+      <label>
+        Date
+        <input type="date" name="date" size="50">
+      </label>
+
+      <label>
+        Tags
+        <input type="text" name="tags" size="50">
+      </label>
+
+      <label>
+        Author Email
+        <input type="email" name="author_email" size="50">
+      </label>
+
+      <label>
+        Author Handle
+        <input type="text" name="author_handle" size="50">
+      </label>
+
+      <label>
+        Author Image
+        <input type="url" name="author_image" size="50">
+      </label>
+
+      <button>Share!</button>
+
+    </form>
+  </div> <!-- #ends box -->
+
+</div> <!-- #ends container -->

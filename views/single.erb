@@ -1,0 +1,27 @@
+<div class="index_container">
+
+  <h2>Single Mumble</h2>
+
+    <div class="wrapper">
+
+      <div class="show_mumble">
+
+
+        <img class="author_thumb" src="<%=@mumbles["author_thumbnail"] %>" width="45"/>
+
+        <span class="author_handle"><%@mumbles["author_handle"] %></span>
+
+        <span class="date-text"><%@mumbles["date"] %></span>
+
+        <img src="<%=@mumbles["image"] %>" />
+
+        <p> <%=@mumbles["text"] %> </p>
+
+        <span class="likes"> <%= @mumbles["likes"] %> Likes </span>
+
+
+    </div> <!-- ends show_mumble -->
+
+  </div> <!-- ends wrapper -->
+
+</div> <!-- ends container -->
