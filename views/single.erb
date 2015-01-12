@@ -7,17 +7,17 @@
       <div class="show_mumble">
 
 
-        <img class="author_thumb" src="<%=@mumbles["author_thumbnail"] %>" width="45"/>
+        <img class="author_thumb" src="<%=@mumble["author_thumbnail"] %>" width="45"/>
 
-        <span class="author_handle"><%@mumbles["author_handle"] %></span>
+        <span class="author_handle"><%@mumble["author_handle"] %></span>
 
-        <span class="date-text"><%@mumbles["date"] %></span>
+        <span class="date-text"><%@mumble["date"] %></span>
 
-        <img src="<%=@mumbles["image"] %>" />
+        <img src="<%=@mumble["image"] %>" />
 
-        <p> <%=@mumbles["text"] %> </p>
+        <p> <%=@mumble["text"] %> </p>
 
-        <span class="likes"> <%= @mumbles["likes"] %> Likes </span>
+        <span class="likes"> <%= @mumble["likes"] %> Likes </span>
 
 
     </div> <!-- ends show_mumble -->

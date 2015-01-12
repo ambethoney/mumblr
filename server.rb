@@ -43,12 +43,13 @@ module Mumblr
     end
 
     get('/mumbles/:id') do
-      @mumble = params[:id]
-      render(:erb, :single, :layout => :default)
+      @id = params[:id]
+      @mumble = $redis.hgetall("mumbles:#{@id}")
+       render(:erb, :single, :layout => :default_layout)
     end
 
     post('/mumbles')do
-    binding.pry
+     binding.pry
       id = $redis.incr("new_entry")
       $redis.hmset("mumbles:#{id}",
       "text", params["text"],
